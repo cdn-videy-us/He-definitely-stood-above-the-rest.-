@@ -1,203 +1,74 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>He definitely stood above the rest. 🔥😏</title>
-  <link href="/images/favicon.png" rel="icon" type="image/ico">
-  <link href="/images/favicon.png" rel="icon" type="image/png">
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial,sans-serif;
-    }
-
-    body{
-      background:#f3f3f3;
-      color:#111;
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-    }
-
-    header{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:20px 60px;
-    }
-
-    .logo{
-      text-decoration:none;
-      color:#0f172a;
-      font-size:18px;
-      font-weight:bold;
-    }
-
-    .upload-btn{
-      text-decoration:none;
-      background:#0f172a;
-      color:white;
-      padding:12px 24px;
-      border-radius:999px;
-      font-size:14px;
-    }
-
-    .container{
-      flex:1;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      gap:18px;
-    }
-
-    .video-wrapper{
-      width:720px;
-      max-width:90%;
-      background:black;
-      border-radius:10px;
-      overflow:hidden;
-    }
-
-    video{
-      width:100%;
-      display:block;
-      background:black;
-    }
-
-    .share-btn{
-      text-decoration:none;
-      background:#0f172a;
-      color:white;
-      padding:12px 24px;
-      border-radius:999px;
-      font-size:14px;
-    }
-
-    footer{
-      text-align:center;
-      padding:24px;
-      font-size:13px;
-      color:#666;
-      display:flex;
-      justify-content:center;
-      gap:30px;
-    }
-
-    footer a{
-      text-decoration:none;
-      color:#666;
-    }
-
-    @media(max-width:768px){
-      header{
-        padding:14px 16px;
-      }
-
-      .container{
-        padding:0 12px;
-      }
-
-      footer{
-        flex-direction:column;
-        gap:10px;
-      }
-    }
-  </style>
-</head>
-<body oncontextmenu="return false">
-
-<header>
-
-</header>
-
-<main class="container">
-
-  <div class="video-wrapper">
-
-    <video
-      id="video"
-      controls
-      controlsList="nodownload noplaybackrate"
-      disablePictureInPicture
-      poster="https://i.imgur.com/UADTMGj.jpeg"
-      preload="metadata"
-    >
-      <source src="https://cdn.videy.co/Nl9qHRAR1.mp4" type="video/mp4">
-    </video>
-</div>
-<a id="ad-link"
-   href="#"
-   style="display:inline-block;padding:12px 24px;background:#000000;color:white;text-decoration:none;border-radius:8px;font-family:Arial;">
-</a>
-
-<script>
-const encodedUrl = "aHR0cHM6Ly9kaXNyZXB1dGFibGVwb2xsdXRpb25kaXNjdXNzaW9uLmNvbS9yamFhMmoxNmk/a2V5PTk4ZTQ0MWU2MzE2ZjUyY2FhMGEzMjUzNjdjMjljNTk1";
-
-const texts = [
-  "Full Length Video",
-  "See More Video",
-  "Full HD Video",
-  "Full Length HD"
-];
-
-const adLink = document.getElementById("ad-link");
-
-adLink.href = atob(encodedUrl);
-
-adLink.innerHTML = `<strong>${
-  texts[Math.floor(Math.random() * texts.length)]
-}</strong>`;
-</script>
-</main>
-
-<footer>
 <script src="https://intentpound.com/1a/30/51/1a305145c025014989c49133a7076589.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>He definitely stood above the rest. 🔥😏</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            color: black;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+        }
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-title">
+    <div class="video-wrapper">
+<div class="col-md-6 offset-md-3 text-center my-4">
+                        <div id="content">
+<center><video autoplay loop playsinline controls poster="https://i.imgur.com/SQ0p8jv.jpeg">
+            <source src="https://cdn.videy.co/Nl9qHRAR1.mp4" type="video/mp4">
+        </video></center>
+    <!-- Tombol GIF -->
+    <a href="https://t.co/mPEr2GULQY" class="gif-btn">
+      <center><img src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x50_2_iam18.gif" alt="Iklan GIF"></center>
   <center><div class="copyright"><font color="black">Copyright @ 2026 <strong>Facebook</strong></font></div></center>
-</footer>
-
-<script>
-  // Disable right click
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Disable common inspect shortcuts
-  document.addEventListener('keydown', function(e){
-
-    // F12
-    if(e.key === "F12"){
-      e.preventDefault();
-    }
-
-    // CTRL+SHIFT+I
-    if(e.ctrlKey && e.shiftKey && e.key === 'I'){
-      e.preventDefault();
-    }
-
-    // CTRL+SHIFT+J
-    if(e.ctrlKey && e.shiftKey && e.key === 'J'){
-      e.preventDefault();
-    }
-
-    // CTRL+U
-    if(e.ctrlKey && e.key === 'u'){
-      e.preventDefault();
-    }
-
-  });
-
-  // Prevent drag download
-  const video = document.getElementById("video");
-
-  video.addEventListener('dragstart', e => {
-    e.preventDefault();
-  });
-
-</script>
-
 </body>
 <script type='text/javascript'>
     //<![CDATA[
